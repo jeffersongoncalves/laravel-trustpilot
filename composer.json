@@ -1,22 +1,29 @@
 {
     "name": "jeffersongoncalves/laravel-trustpilot",
-    "description": "A Laravel client for the Trustpilot API - business units, reviews, replies, invitations and review tags.",
+    "description": "A Laravel client for the Trustpilot API — business units, public and private reviews, replies, email invitations, and review tags.",
     "keywords": [
         "laravel",
-        "laravel-trustpilot"
+        "trustpilot",
+        "reviews",
+        "ratings",
+        "invitations",
+        "reputation",
+        "api",
+        "client"
     ],
     "homepage": "https://github.com/jeffersongoncalves/laravel-trustpilot",
     "license": "MIT",
     "authors": [
         {
-            "name": "Jefferson Simão Gonçalves",
-            "email": "gerson.simao.92@gmail.com"
+            "name": "Jefferson Gonçalves",
+            "email": "jefferson@codions.com",
+            "homepage": "https://github.com/jeffersongoncalves"
         }
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^12.0|^13.0"
+        "illuminate/support": "^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
@@ -27,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jeffersongoncalves\\Trustpilot\\": "src/"
+            "JeffersonGoncalves\\Trustpilot\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jeffersongoncalves\\Trustpilot\\Tests\\": "tests/"
+            "JeffersonGoncalves\\Trustpilot\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -52,10 +59,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jeffersongoncalves\\Trustpilot\\TrustpilotServiceProvider"
+                "JeffersonGoncalves\\Trustpilot\\TrustpilotServiceProvider"
             ],
             "aliases": {
-                "Trustpilot": "Jeffersongoncalves\\Trustpilot\\Facades\\Trustpilot"
+                "Trustpilot": "JeffersonGoncalves\\Trustpilot\\Facades\\Trustpilot"
             }
         }
     },
